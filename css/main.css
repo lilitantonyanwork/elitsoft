@@ -262,6 +262,13 @@ header{
     margin-top: 30px;
     gap: 30px;
 }
+#map{
+    height:100%;
+    width: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+
+}
 .service__item{
     width: calc(100%/3 - 20px);
     background: #FAF9F9;
@@ -281,6 +288,9 @@ header{
     max-width: 441px;
     width: 100%;
 }
+.service__item:hover .service__title{
+    color: #f5841f ;
+}
 .service__img{
     position: absolute;
     right: 0;
@@ -294,6 +304,13 @@ header{
     letter-spacing: -0.3px;
     text-align: left;
     color: #050301;
+    transition: all .3s;
+}
+.service__item:hover .btn__more{
+    color: #f5841f ;
+}
+.service__item:hover .btn__more path{
+    stroke: #f5841f;
 }
 .about{
     padding-top: 50px;
@@ -834,6 +851,10 @@ header{
     font-family: Involve-Medium, sans-serif;
     margin-bottom: 16px;
     display: flex;
+    transition: all .3s;
+}
+.project__title:hover{
+    color: #f5841f;
 }
 .project__desc{
     font-weight: 400;
@@ -965,6 +986,12 @@ header{
     font-family: Involve-Medium, sans-serif;
     color: #050301;
     margin-bottom: 20px;
+}
+.solution__item:hover h3, .solution__item:hover .btn__more{
+    color: #f5841f;
+}
+.solution__item:hover .btn__more path{
+    stroke: #f5841f;
 }
 .solution__item .tag__item{
     border-radius: 50px;

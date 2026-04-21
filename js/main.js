@@ -6,4 +6,32 @@ document.addEventListener("DOMContentLoaded", function () {
         menu.classList.toggle('show');
         bb.classList.toggle('no-scroll')
     })
+
+
+
+    ymaps.ready(init);
+
+    function init() {
+        const map = new ymaps.Map("map", {
+            center:  [55.81520, 37.352983], // координаты
+            zoom: 14,
+            controls: []
+        });
+
+        map.behaviors.disable("scrollZoom");
+
+
+        const placemark = new ymaps.Placemark(
+            [55.81520, 37.352983],
+            {
+
+            },
+            {
+            }
+        );
+
+        map.geoObjects.add(placemark);
+        // 🔥 фикс: убираем фильтр с пинов
+
+    }
 });
