@@ -837,6 +837,7 @@ header{
 .contact-form__content.bg-gray .btn__submit{
     background: #f5841f;
     color: #fff;
+    border: none;
 }
 .partner__list{
     margin-top: 30px;

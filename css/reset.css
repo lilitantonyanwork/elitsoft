@@ -264,7 +264,7 @@ footer{
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
 }
-.pb-100{
+section.pb-100{
     padding-bottom: 100px;
 }
 section.bg-white{
