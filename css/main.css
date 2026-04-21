@@ -631,6 +631,9 @@ header{
     color: #787878;
     padding-right: 30px;
 }
+.contact-form__content.bg-gray .checkbox-label .checkmark:after{
+    border-color: #464443;
+}
 .contact-form__content.bg-gray .checkbox-label a{
     color: #464443;
 }
