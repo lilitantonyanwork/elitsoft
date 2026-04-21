@@ -378,4 +378,9 @@
         gap: 10px;
         align-items: flex-start;
     }
+    .services__top{
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
 }
