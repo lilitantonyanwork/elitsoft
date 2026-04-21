@@ -702,4 +702,9 @@
     .checkbox-label{
         font-size: 12px;
     }
+    .menu{
+        width: 280px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }

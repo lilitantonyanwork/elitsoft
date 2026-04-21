@@ -1,9 +1,19 @@
 document.addEventListener("DOMContentLoaded", function () {
     const menu_btn = document.querySelector('.btn__menu');
+    const menu_close = document.querySelector('.btn__close');
     const menu = document.querySelector('.menu');
     const bb = document.querySelector('body');
+    const ov = document.querySelector('.overlay');
     menu_btn.addEventListener('click', function (){
         menu.classList.toggle('show');
+        menu_btn.classList.toggle('hide');
+        ov.classList.toggle('show');
+        bb.classList.toggle('no-scroll')
+    })
+    menu_close.addEventListener('click', function (){
+        menu.classList.toggle('show');
+        menu_btn.classList.toggle('hide');
+        ov.classList.toggle('show');
         bb.classList.toggle('no-scroll')
     })
 

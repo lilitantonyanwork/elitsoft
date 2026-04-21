@@ -173,6 +173,9 @@ input {
 .btn__menu{
     display: none;
 }
+.btn__menu.hide{
+    display: none;
+}
 footer{
     border-top: 1px solid #D2D2D2;
     background: #fff;
@@ -300,4 +303,24 @@ section.bg-green{
 .medium{
     font-family: Involve-Medium, sans-serif;
     font-weight: 500;
+}
+.overlay{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0, .7);
+    left: 0;
+    top: 0;
+}
+.overlay.show{
+    display: flex;
+}
+.btn__close{
+    position: absolute;
+    top: 24px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    z-index: 999;
 }
