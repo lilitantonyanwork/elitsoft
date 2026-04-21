@@ -133,7 +133,9 @@ header{
     padding: 24px;
     background: #F6F2EF;
     border-radius: 24px;
-
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 .hero__adv h2{
     font-family: Involve-Medium, sans-serif;
@@ -146,6 +148,15 @@ header{
     width: 100%;
     color: #050301;
     margin-bottom: 32px;
+}
+.hero__adv:hover h2{
+    color: #f5841f;
+}
+.hero__adv:hover .btn__more{
+    color: #f5841f;
+}
+.hero__adv:hover .btn__more path{
+    stroke: #f5841f;
 }
 .hero__partners img{
     border-radius: 100%;
@@ -206,6 +217,16 @@ header{
     margin-bottom: 16px;
     max-width: 242px;
     font-weight: 500;
+    transition: all .3s;
+}
+.hero__post:hover h3{
+    color: #f5841f;
+}
+.hero__post:hover .btn__more{
+    color: #f5841f;
+}
+.hero__post:hover .btn__more path{
+    stroke: #f5841f;
 }
 .tag__list{
     gap: 6px;
@@ -421,6 +442,12 @@ header{
 
     color: #050301;
 }
+.industry:hover .industry__title, .industry:hover .btn__more{
+    color: #f5841f;
+}
+.industry:hover .btn__more path{
+    stroke: #f5841f;
+}
 .services{
     padding-top: 50px;
     padding-bottom: 50px;
@@ -471,6 +498,9 @@ header{
     overflow: hidden;
     color: #000000;
 
+}
+.news__title:hover{
+    color: #f5841f;
 }
 
 .contacts{
@@ -556,9 +586,24 @@ header{
     letter-spacing: -0.3px;
     text-align: right;
     text-decoration-line: underline;
-
+    transition: all .3s;
     color: #050301;
 
+}
+.contact__row a:hover{
+    transition: all .3s;
+    color: #f5841f;
+    text-decoration: underline;
+}
+.contact__info a:hover{
+    text-decoration: underline;
+}
+.checkbox-label a:hover{
+    color: #f5841f;
+    text-decoration: underline;
+}
+.footer__link:last-child:hover{
+    color: #f5841f;
 }
 .contact-form__content{
     padding: 70px 40px;
