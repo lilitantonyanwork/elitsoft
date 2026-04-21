@@ -127,12 +127,16 @@
     .menu__item{
         width: 100%;
     }
+    .e-commerce .section__title{
+        font-size: 56px;
+        line-height: 72px;
+    }
 }
 @media screen and (max-width: 990px){
     .service__img {
         max-width: 100px;
     }
-    .section__title, .section__title.small{
+    .section__title, .section__title.small, .page__title{
         font-size: 48px;
         line-height: 62px;
     }
@@ -146,7 +150,7 @@
     .contact-form__content{
         gap: 60px;
     }
-    .contact-form .section__title{
+    .contact-form .section__title,     .e-commerce .section__title {
         font-size: 48px;
         line-height: 64px;
     }
@@ -161,6 +165,35 @@
     }
     .certificate__item h3{
         font-size: 18px;
+    }
+    .section__text{
+        font-size: 20px;
+    }
+    .trend__item{
+        width: calc(100%/2 - 15px);
+    }
+    .normative__item{
+        min-height: 250px;
+        height: auto;
+        width: calc(100%/2 - 15px);
+    }
+    .architecture__item{
+        height: auto;
+    }
+    .features__item h3{
+        font-size: 18px;
+    }
+    .features__item p{
+        font-size: 16px;
+    }
+    .features__item{
+        height: auto;
+    }
+    .component__img{
+        width: 70%;
+    }
+    .component__item h3{
+        font-size: 16px;
     }
 }
 @media screen and (max-width: 900px){
@@ -184,6 +217,12 @@
         width: calc(100%/3 - 20px);
         height: 150px;
     }
+    .service__title{
+        font-size: 18px;
+    }
+    .solution__list h3{
+        font-size: 18px;
+    }
 }
 @media screen and (max-width: 768px){
     .hero__title{
@@ -201,7 +240,7 @@
     .tag__item{
         font-size: 12px;
     }
-    .section__title, .section__title.small{
+    .section__title, .section__title.small, .e-commerce .section__title{
         font-size: 34px;
         line-height: 48px;
     }
@@ -296,6 +335,68 @@
     .licences__content li{
         font-size: 16px;
     }
+    .services__list--equal .service__item{
+        width: calc(100%/2 - 15px);
+        min-height: 200px;
+    }
+    .services__list--equal .service__item:last-child{
+        width: 100%;
+    }
+    .solution__item{
+        height: auto;
+        min-height: 200px;
+    }
+    .solution__item .tag__list{
+        margin-bottom: 20px;
+    }
+    .page-heading__content{
+        padding: 30px;
+    }
+    .page__title{
+        font-size: 32px;
+        line-height: 48px;
+        margin-bottom: 20px;
+    }
+    .page__desc p{
+        font-size: 16px;
+    }
+    .step__item{
+        width: 100%;
+        flex-direction: column;
+    }
+    .architecture__item{
+        width: 100%;
+    }
+    .component__item{
+        width: calc(100%/2 - 20px);
+    }
+    .component__img{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .component__item:nth-child(2):after{
+        right: 43px;
+        bottom: -22px;
+    }
+    .normative__item{
+        width: 100%;
+        min-height: 180px;
+        height: 100%;
+        gap: 20px;
+    }
+    .features__item{
+        width: 100%;
+    }
+    .features__item.bg-lilac:first-child, .features__item.bg-gray:last-child{
+        width: 100%;
+    }
+    .platform__row, .platform__row:nth-child(2n+1){
+        flex-direction: column;
+    }
+    .platform__row li{
+        font-size: 16px;
+    }
+
 }
 @media screen and (max-width: 600px){
     .container,.hero{
@@ -398,6 +499,75 @@
     .licences__content a{
         overflow-wrap: anywhere;
     }
+    .solutions{
+        padding-top: 25px;
+    }
+    .e-commerce{
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .e-commerce__item{
+        width: 100%;
+    }
+    .e-commerce__list{
+        flex-wrap: wrap;
+    }
+    .solution__item{
+        width: 100%;
+    }
+    .section__text{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .services__list--equal .service__item{
+        width: 100%;
+    }
+    .choise{
+        padding-top: 50px;
+    }
+    .choise__item p{
+        font-size: 16px;
+    }
+    .trend__item{
+        width: 100%;
+        gap: 20px;
+        height: auto;
+        min-height: 150px;
+    }
+    .feature__number{
+        font-size: 30px;
+        line-height: 48px;
+        margin-bottom: 30px;
+    }
+    .features{
+        padding-top: 50px;
+    }
+    .architectures{
+        padding-top: 50px;
+    }
+    .steps{
+        padding-top: 50px;
+    }
+    .normative{
+        padding-top: 50px;
+    }
+    .breadcrumbs__text{
+        font-size: 12px;
+    }
+    .breadcrumbs__link{
+        font-size: 12px;
+    }
+    .page-heading{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .normative__list{
+        margin-top: 30px;
+    }
+    .components{
+        padding-top: 50px;
+        padding-bottom: 0;
+    }
 }
 @media screen and (max-width: 480px){
     .hero__title{
@@ -486,5 +656,29 @@
     }
     .partner__item{
         width: calc(100%/2 - 10px);
+    }
+    .component__item, .component__item:first-child, .component__item:nth-child(3){
+        width: 100%;
+        transform: none;
+    }
+    .component__item:first-child:after{
+        right: 103px;
+        top: unset;
+        bottom: -20px;
+    }
+    .component__item:nth-child(4):before{
+        left: 103px;
+        top: -20px;
+    }
+    .page__title{
+        font-size: 28px;
+    }
+    .section__title, .section__title.small{
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .choise__item{
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
