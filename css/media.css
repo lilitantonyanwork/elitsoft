@@ -396,9 +396,24 @@
     .platform__row li{
         font-size: 16px;
     }
+    .project__img{
+        height: 200px;
+    }
 
 }
 @media screen and (max-width: 600px){
+    .project__item{
+        width: calc(100%/2 - 15px);
+    }
+    .project__title{
+        font-size: 18px;
+    }
+    .project__desc{
+        font-size: 14px;
+    }
+    .project__list{
+        gap: 30px;
+    }
     .container,.hero{
         padding-left: 20px;
         padding-right: 20px;
@@ -680,5 +695,11 @@
     .choise__item{
         flex-direction: column;
         align-items: flex-start;
+    }
+    .project__item{
+        width: 100%;
+    }
+    .checkbox-label{
+        font-size: 12px;
     }
 }

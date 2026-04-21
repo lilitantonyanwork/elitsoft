@@ -147,6 +147,10 @@ input {
     text-align: center;
     color: #f5841f;
 }
+.btn__orange--outline:hover{
+    background: #f5841f;
+    color: #fff;
+}
 
 .btn__submit{
     padding: 20px 60px;
