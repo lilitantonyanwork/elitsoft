@@ -293,6 +293,9 @@
         padding-top: 25px;
         padding-bottom: 50px;
     }
+    .licences__content li{
+        font-size: 16px;
+    }
 }
 @media screen and (max-width: 600px){
     .container,.hero{
@@ -387,6 +390,13 @@
     .partner__item{
         width: calc(100%/3 - 14px);
         height: 120px;
+    }
+    .licences{
+        padding-top: 25px;
+        padding-bottom: 50px;
+    }
+    .licences__content a{
+        overflow-wrap: anywhere;
     }
 }
 @media screen and (max-width: 480px){
